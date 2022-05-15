@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.button`
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 3rem;
   background-color: transparent;
   color: var(--text-color);
   border: solid 1px var(--button);
