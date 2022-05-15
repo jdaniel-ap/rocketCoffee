@@ -6,6 +6,7 @@ export const Container = styled.main`
   flex-direction: column;
   align-items: center;
   max-width: 30rem;
+  animation: showsup 0.5s ease-out;
 
   div:first-child {
     text-align: center;
@@ -35,6 +36,7 @@ export const Container = styled.main`
     max-width: 100%;
     position: absolute;
     bottom: 0;
+    animation: shake 0.5s linear;
   }
 
   .mobile {
@@ -55,6 +57,33 @@ export const Container = styled.main`
 
     .mobile {
       display: block;
+    }
+  }
+
+  @keyframes showsup {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-15deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
   }
 `;

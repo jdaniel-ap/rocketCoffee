@@ -2,9 +2,11 @@ import styled, { css } from 'styled-components';
 
 interface ContainerProps {
   isTop: boolean;
+  seconds?: number;
 }
 
 export const Desktop = styled.div`
+  animation: showsup linear ${({ seconds }) => `${seconds}s`};
   position: absolute;
   z-index: -1;
   ${(props: ContainerProps) =>
@@ -36,5 +38,14 @@ export const Mobile = styled.div`
 
   @media (max-width: 520px) {
     display: block;
+  }
+
+  @keyframes showsup {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;

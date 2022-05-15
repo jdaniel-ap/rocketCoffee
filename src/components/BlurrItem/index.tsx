@@ -10,10 +10,10 @@ function BlurrItem() {
       <Mobile>
         <img src={BlurrMobile} alt='blurr' />
       </Mobile>
-      <Desktop isTop>
+      <Desktop isTop seconds={0.5}>
         <img src={BlurrImgB} alt='blurr' />
       </Desktop>
-      <Desktop isTop={false}>
+      <Desktop isTop={false} seconds={1}>
         <img src={BlurrImgA} alt='blurr' />
       </Desktop>
     </>
