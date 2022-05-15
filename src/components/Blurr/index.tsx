@@ -5,8 +5,7 @@ import { Container } from './styles';
 export function Blurr() {
   return (
     <Container>
-      <BlurrItem isTop />
-      <BlurrItem isTop={false} />
+      <BlurrItem />
     </Container>
   );
 }

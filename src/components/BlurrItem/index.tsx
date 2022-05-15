@@ -1,17 +1,22 @@
 import BlurrImgA from '../../assets/blur-1.png';
 import BlurrImgB from '../../assets/blur-2.png';
+import BlurrMobile from '../../assets/blur-mobile.png';
 
-import { Container } from './styles';
+import { Desktop, Mobile } from './styles';
 
-interface BlurrItemProps {
-  isTop: boolean;
-}
-
-function BlurrItem({ isTop }: BlurrItemProps) {
+function BlurrItem() {
   return (
-    <Container isTop={isTop}>
-      <img src={isTop ? BlurrImgB : BlurrImgA} alt='blurr' />
-    </Container>
+    <>
+      <Mobile>
+        <img src={BlurrMobile} alt='blurr' />
+      </Mobile>
+      <Desktop isTop>
+        <img src={BlurrImgB} alt='blurr' />
+      </Desktop>
+      <Desktop isTop={false}>
+        <img src={BlurrImgA} alt='blurr' />
+      </Desktop>
+    </>
   );
 }
 
