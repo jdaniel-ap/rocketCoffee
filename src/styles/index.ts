@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
   input,
   textarea,
   button {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: 400;
   }
   
