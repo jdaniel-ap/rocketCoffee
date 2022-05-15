@@ -18,7 +18,7 @@ export const Desktop = styled.div`
           left: -10%;
         `}
 
-  @media (max-width: 920px) {
+  @media (max-width: 620px) {
     display: none;
   }
 `;

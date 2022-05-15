@@ -3,16 +3,16 @@ import styled from 'styled-components';
 export const Container = styled.header`
   width: 100%;
   color: var(--text-color);
-  border-bottom: 1px solid var(--border);
   padding: 2rem 1.5rem;
+
+  @media (max-width: 920px) {
+    border-bottom: 1px solid var(--border);
+  }
 `;
 
 export const Mobile = styled.div`
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
+  display: none;
 
   img {
     width: 10rem;
@@ -38,6 +38,14 @@ export const Mobile = styled.div`
         border-bottom: 1px solid var(--border);
       }
     }
+  }
+
+  @media (max-width: 920px) {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
   }
 `;
 
