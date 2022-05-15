@@ -22,9 +22,39 @@ export const Container = styled.main`
     }
   }
 
-  img {
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 1rem;
+    display: none;
+  }
+
+  .coffee {
     width: 30rem;
+    max-height: 100%;
+    max-width: 100%;
     position: absolute;
     bottom: 0;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media (max-width: 520px) {
+    h1 {
+      display: none;
+    }
+
+    h3 {
+      display: block;
+      margin-bottom: 10rem;
+      line-height: 4rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .mobile {
+      display: block;
+    }
   }
 `;

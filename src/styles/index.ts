@@ -30,7 +30,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: var(--backgrond);
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
 
   }
 

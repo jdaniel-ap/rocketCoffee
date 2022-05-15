@@ -91,22 +91,6 @@ export const Content = styled.div`
     }
   }
 
-  button {
-    padding: 0.6rem 2rem;
-    background-color: transparent;
-    color: var(--text-color);
-    border: solid 1px var(--button);
-    border-radius: 0.5rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: 0.2s;
-
-    &:hover {
-      background-color: var(--button);
-    }
-  }
-
   @media (max-width: 920px) {
     &:first-child {
       display: none;

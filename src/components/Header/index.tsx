@@ -5,6 +5,7 @@ import menu from '../../assets/menu-buguer-open.svg';
 import closeMenu from '../../assets/menu-buguer-close.svg';
 
 import { Container, Content, Mobile } from './styles';
+import Button from '../Button';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ export function Header() {
             <li>Gift Cards</li>
             <li>Lojas</li>
           </ul>
-          <button type='button'>Pegar meu café</button>
+          <Button content='Pegar meu café' />
         </Content>
         <Mobile>
           <img src={mobileLogo} alt='Rocket Coffe' />

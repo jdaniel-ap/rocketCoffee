@@ -27,10 +27,12 @@ export const Mobile = styled.div`
   display: none;
   position: absolute;
   z-index: -1;
-  top: 70%;
-  left: 50%;
+  bottom: -5%;
 
-  transform: translate(-50%, -50%);
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
 
   @media (max-width: 520px) {
     display: block;
