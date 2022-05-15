@@ -23,7 +23,7 @@ export const Container = styled.main`
   }
 
   img {
-    width: 30rem;
+    width: 40rem;
     position: absolute;
     bottom: 0;
   }
