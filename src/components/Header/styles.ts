@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+type MenuOptionsProps = {
+  seconds: number;
+};
+
 export const Container = styled.header`
   width: 100%;
   color: var(--text-color);
@@ -30,13 +34,10 @@ export const Mobile = styled.div`
     bottom: 0;
     left: 0;
     z-index: 99;
+    animation: showsup 0.3s linear;
 
     ul {
       list-style: none;
-      li {
-        padding: 1rem;
-        border-bottom: 1px solid var(--border);
-      }
     }
   }
 
@@ -47,6 +48,13 @@ export const Mobile = styled.div`
     justify-content: center;
     justify-content: space-between;
   }
+`;
+
+export const Option = styled.li<MenuOptionsProps>`
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  animation: slice ease-out ${(props: MenuOptionsProps) => `${props.seconds}s`};
+  transition: 10s;
 `;
 
 export const Content = styled.div`
@@ -94,6 +102,25 @@ export const Content = styled.div`
   @media (max-width: 920px) {
     &:first-child {
       display: none;
+    }
+  }
+
+  @keyframes showsup {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slice {
+    from {
+      transform: translateX(-1000%);
+    }
+
+    to {
+      transform: translateX(0);
     }
   }
 `;

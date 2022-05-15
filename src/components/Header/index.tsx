@@ -4,7 +4,7 @@ import mobileLogo from '../../assets/logo-mobile.svg';
 import menu from '../../assets/menu-buguer-open.svg';
 import closeMenu from '../../assets/menu-buguer-close.svg';
 
-import { Container, Content, Mobile } from './styles';
+import { Container, Content, Mobile, Option } from './styles';
 import Button from '../Button';
 
 export function Header() {
@@ -38,11 +38,11 @@ export function Header() {
           {isMenuOpen && (
             <section>
               <ul>
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Recompensas</li>
-                <li>Gift Cards</li>
-                <li>Lojas</li>
+                <Option seconds={0.2}>Home</Option>
+                <Option seconds={0.4}>Menu</Option>
+                <Option seconds={0.6}>Recompensas</Option>
+                <Option seconds={0.8}>Gift Cards</Option>
+                <Option seconds={1}>Lojas</Option>
               </ul>
             </section>
           )}
